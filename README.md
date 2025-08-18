@@ -1,5 +1,3 @@
-# SPI-I2C-on-FPGA-with-UVM-Testbench
-
 # FPGA 기반 SPI/I2C 통신 시스템 설계 & UVM 기반 기능 검증
 ---
 
