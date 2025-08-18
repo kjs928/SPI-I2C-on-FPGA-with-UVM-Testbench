@@ -16,6 +16,10 @@
 ## 🔑 주요 구현 내용
 
 ### 1. SPI 통신 모듈
+<p align="center">
+  <img src="1.%20SPI/SPI%20Blockdiagram.png" alt="SPI Block Diagram" width="800">
+</p>
+
 - **Master/Slave 모듈 설계** : CPOL/CPHA 설정 기반 4모드 지원
 - **Burst 전송 지원** : FSM으로 다중 데이터 전송 구현
 - **Master 기능** : SCLK 생성, SS 제어, MOSI/MISO 데이터 송수신
@@ -24,6 +28,10 @@
 ---
 
 ### 2. I2C 통신 모듈
+<p align="center">
+  <img src="2.%20I2C/I2C%20Blockdiagram.png" alt="I2C Block Diagram" width="800">
+</p>
+
 - **Master/Slave 모듈 설계** : SDA/SCL 기반 직렬 통신 구현
 - **Master 기능** : Start/Stop 조건 생성, 7bit 주소 전송 및 ACK 처리
 - **Slave 기능** : 주소 매칭, Read/Write 동작, 내부 레지스터 접근
@@ -32,6 +40,10 @@
 ---
 
 ### 3. UVM 기반 SPI 검증 환경
+<p align="center">
+  <img src="3.%20UVM/UVM%20Blockdiagram.png" alt="UVM Block Diagram" width="800">
+</p>
+
 - **UVM Testbench 구성** : Sequencer, Driver, Monitor, Scoreboard 포함
 - **Self-checking** : 자동 트랜잭션 생성 및 DUT 응답 비교
 - **Burst 검증 시나리오** : 다양한 데이터 전송 케이스 검증
